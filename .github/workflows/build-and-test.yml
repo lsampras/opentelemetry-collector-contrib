@@ -75,9 +75,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup-environment]
     steps:
-      - run: sudo apt-get -qq update
-      - name: Install libsystemd-dev
-        run: sudo apt-get install libsystemd-dev
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Setup Go
@@ -183,9 +180,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup-environment]
     steps:
-      - run: sudo apt-get -qq update
-      - name: Install libsystemd-dev
-        run: sudo apt-get install libsystemd-dev
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Setup Go
