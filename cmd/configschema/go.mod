@@ -237,7 +237,7 @@ require (
 	github.com/gosnmp/gosnmp v1.35.0 // indirect
 	github.com/grafana/dskit v0.0.0-20220928083349-b1b307db4f30 // indirect
 	github.com/grafana/go-gelf/v2 v2.0.1 // indirect
-	github.com/grafana/loki v1.6.2-0.20221109162728-4064ccba6e73 // indirect
+	github.com/grafana/loki v1.6.2-0.20221112094039-1f7fabfbb986 // indirect
 	github.com/grafana/regexp v0.0.0-20221005093135-b4c2bcb0a4b6 // indirect
 	github.com/grobie/gomemcache v0.0.0-20180201122607-1f779c573665 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0 // indirect
@@ -1067,6 +1067,7 @@ exclude github.com/docker/distribution v2.8.0+incompatible
 // at the time of this inclusion, v0.39.1 was the latest version available (also tagged as v2.39.1)
 replace github.com/prometheus/prometheus => github.com/prometheus/prometheus v0.39.1
 
+// loki needs grafana fork to be used
 replace github.com/hpcloud/tail => github.com/grafana/tail v0.0.0-20220426200921-98e8eb28ea4c
 
 // using fork for support LogpullReceived and LogpullFields for loki - see https://github.com/cloudflare/cloudflare-go/pull/743
